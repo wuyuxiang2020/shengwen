@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>声纹注册页面</title>
+    <link rel="icon" type="image/x-icon" href="../dun.png">
+</head>
+<body>
+    <div >
+        <form action="/register" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>注册</legend>
+            <div class="a">
+            <label> 注册声纹：<input type="file" required accept="audio/*" name="audio"></label><br><br>
+            <label> 注册名称：<input type="text" name="name"></label>
+            <input type="submit" value="上传" onclick="ind()">
+            </div>
+        </fieldset>
+    </form>
+</body>
+<script>
+    function ind(){
+        window.location.href="lesson1.html"
+    }
+</script>
+</html>
